@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+task hello << {
+    println 'Hello World!'
+}
+sourceCompatibility = 1.7
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'M2 Gradle Robert McBride', 'Implementation-Version': version , 'Main-Class' : 'edu/oad/antlab/pkg1/AntLabMain'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
