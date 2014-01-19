@@ -3,7 +3,9 @@
 #################
 
 .gradle/
+gradle/
 gradlew
+gradlew.bat
 settings.gradle
 
 *.pydevproject
