@@ -7,14 +7,15 @@ task hello << {
 }
 
 dependencies {
-    compile files('lib/resources.jar');
+    compile files('lib/resources.jar')
 }
+
 sourceCompatibility = 1.7
 version = '3.14'
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'RobMcBrideM2Build', 'Implementation-Version': version , 'Main-Class' : 'edu/oad/antlab/pkg1/AntLabMain'
+        attributes 'Implementation-Title': 'RobMcBrideM2Build', 'Implementation-Version': version , 'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain'
     }
 }
 
