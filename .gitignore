@@ -3,6 +3,8 @@
 #################
 
 .gradle/
+gradlew
+settings.gradle
 
 *.pydevproject
 .project
