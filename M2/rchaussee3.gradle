@@ -2,9 +2,7 @@ defaultTasks 'jar'
 
 apply plugin: 'java'
 
-
 sourceCompatibility = 1.7
-version = "1.0"
 
 dependencies {
 	compile files('lib/resources.jar')
@@ -12,8 +10,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Gradle Build', 'Implementation-Version': version , 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 
-        'Class-Path' : 'lib/resources.jar'
+        attributes 'Implementation-Title': 'Gradle Build', 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain' , 'Class-Path' : '../../lib/resources.jar'
     }
 }
 
