@@ -12,7 +12,7 @@ version = '3.14'
 jar {
     manifest {
         attributes 'Implementation-Title': 'RobMcBrideM2Build', 'Implementation-Version': version ,
-        'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain' , 'Class-Path' : '../libs/resources.jar'
+        'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain' , 'Class-Path' : '../../lib/resources.jar'
     }
 }
 
