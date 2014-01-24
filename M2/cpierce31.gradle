@@ -9,7 +9,10 @@ jar
 {
     manifest 
 	{
-        attributes 'Implementation-Title': 'ClaytonPierceBuild', 'Implementation-Version': version , 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain' , 'Class-Path' : '../../lib/resources.jar'
+        attributes 'Implementation-Title': 'ClaytonPierceBuild', 
+		'Implementation-Version': version , 
+		'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain' , 
+		'Class-Path' : '../../lib/resources.jar'
     }
 }
 
