@@ -1,5 +1,6 @@
 package edu.gatech.oad.antlab.person;
 import java.util.Random;
+import java.util.ArrayList;
 
 /**
  *  A simple class for person 2
@@ -32,12 +33,19 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  int i = input.length();
+	  ArrayList<Integer> arr = new ArrayList<Integer>();
+	  
+	  int j = input.length();
+	  int curr = 0;
 	  Random rand = new Random();
 	  String ans = "";
-	  while(i>0){
-	  	ans = ans+ input.charAt(rand.nextInt(i));
-	  	i--;
+	  while(j>0){
+	   curr = rand.nextInt(input.length());
+		if(!(arr.contains(curr))){
+	  	   ans += input.charAt(curr);
+	   	arr.add(curr);
+	   	j--;
+		}
 	  }
 	  return ans;
 	}
@@ -51,5 +59,10 @@ public class Person2 {
 	 */
 	public String toString(String input) {
 	  return name + calc(input);
+	}
+	
+	public static void main(String[] args){
+	 Person2 per = new Person2("something");
+	 System.out.println(per.calc("1234"));
 	}
 }
